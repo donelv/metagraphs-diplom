@@ -1,0 +1,74 @@
+.infoPanel {
+  background: hsl(0 0% 100% / 0.1);
+  color: white;
+  position: fixed;
+  inset: 0 0 0 60%;
+  right: 16px;
+  top: 16px;
+  bottom: 16px;
+  /* height: 90%; */
+  /* height: 100%; */
+  /* margin: 10px 0 10px 0; */
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 100;
+  transform: translateX(calc(100% + 16px));
+  transition: transform 350ms ease-in;
+}
+.infoPanel.open {
+  transform: translateX(0%);
+}
+.infoPanel__closeButton {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  height: 18px;
+  width: 18px;
+  top: 8px;
+  left: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: transparent;
+  padding: 0;
+}
+.infoPanel__mainInfo {
+  margin-left: 18px;
+  margin-top: 20px;
+}
+.infoPanel__mainInfo p {
+  margin-top: 0;
+  /* line-height: 100%; */
+}
+.infoPanel__closeButton:hover .close:before,
+.infoPanel__closeButton:hover .close:after {
+  opacity: 1;
+}
+.close {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff5f58;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  opacity: 0;
+  content: ' ';
+  border-radius: 1px;
+  height: 70%;
+  width: 1px;
+  background-color: #990000;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
