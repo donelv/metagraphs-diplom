@@ -19,3 +19,24 @@
   font-style: normal;
   font-display: swap;
 }
+.btn {
+  /* background-color: #000; */
+  border: 2px solid #808080;
+  border-radius: 2px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "MontserratAlternates-Medium";
+  font-size: 12px;
+  height: 30px;
+  min-width: 130px;
+  transition: .3s;
+  backdrop-filter: blur(6px);
+  background: hsl(0 0% 100% / 0.1);
+}
+@media (hover: hover){
+  .btn:hover {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #000;
+}
+}

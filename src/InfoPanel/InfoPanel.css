@@ -2,19 +2,20 @@
   background: hsl(0 0% 100% / 0.1);
   color: white;
   position: fixed;
-  inset: 0 0 0 60%;
+  /* inset: 0 0 0 70%; */
+  width: 380px;
   right: 16px;
   top: 16px;
-  bottom: 16px;
+  /* bottom: 16px; */
   /* height: 90%; */
   /* height: 100%; */
   /* margin: 10px 0 10px 0; */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(6px);
   padding: 10px;
   border-radius: 10px;
   z-index: 100;
   transform: translateX(calc(100% + 16px));
-  transition: transform 350ms ease-in;
+  transition: transform 350ms ease
 }
 .infoPanel.open {
   transform: translateX(0%);
@@ -42,10 +43,7 @@
   margin-top: 0;
   /* line-height: 100%; */
 }
-.infoPanel__closeButton:hover .close:before,
-.infoPanel__closeButton:hover .close:after {
-  opacity: 1;
-}
+
 .close {
   position: relative;
   display: flex;
@@ -72,3 +70,38 @@
 .close:after {
   transform: rotate(-45deg);
 }
+@media (hover: hover) {
+  .infoPanel__closeButton:hover .close:before,
+  .infoPanel__closeButton:hover .close:after {
+    opacity: 1;
+  }
+}
+@media ((max-width: 600px)){
+  .infoPanel {
+    width: 95%;
+    right: 0;
+    left: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    /* top: auto;
+    bottom: 0; */
+  } 
+}
+/* @media ((max-width: 800px)) {
+  .infoPanel {
+    height: 380px;
+    width: 100%;
+    /* right: 16px; */
+    /* left: 16px; */
+    /* bottom: 16px; */
+    /* height: 90%; */
+    /* height: 100%; */
+    /* margin: 10px 0 10px 0; */
+    /* backdrop-filter: blur(10px); */
+    /* padding: 10px; */
+    /* border-radius: 10px; */
+    /* z-index: 100; */
+    /* transform: translateX(calc(100% + 16px)); */
+    /* transition: transform 350ms ease-in; */
+  /* } */
+/* } */ 
