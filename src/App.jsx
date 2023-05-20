@@ -220,6 +220,11 @@ function App() {
       //установка данных для графа
       setData(graphData);
     });
+    let navInfo = document.querySelector(".scene-nav-info");
+    //руссификация навигационной подсказки внизу
+    if (navInfo)
+      navInfo.innerHTML =
+        "Левый клик: вращение, Колесо мыши: приближение, Правый клик: смещение";
   }, []);
   // var simulation = d3
   //   .forceSimulation()
@@ -314,7 +319,7 @@ function App() {
         className={"btn"}
         style={{
           position: "absolute",
-          right: "10px",
+          left: "10px",
           bottom: "20px",
           zIndex: 100,
         }}
