@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./InfoPanel.css";
 const InfoPanel = (props) => {
   return (

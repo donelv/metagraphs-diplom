@@ -172,7 +172,6 @@ function App() {
     function force(alpha) {
       data.nodes?.forEach((node) => {
         if (node.type === "course") {
-          // node.id.split("_")[1] === "end";
           if (node.id === "c1_st") {
             node.fx = -width;
             node.fy = 6000;
@@ -224,7 +223,7 @@ function App() {
     //руссификация навигационной подсказки внизу
     if (navInfo)
       navInfo.innerHTML =
-        "Левый клик: вращение, Колесо мыши: приближение, Правый клик: смещение";
+        "ЛКМ: вращение, Колесо мыши: приближение, ПКМ: смещение";
   }, []);
   // var simulation = d3
   //   .forceSimulation()
