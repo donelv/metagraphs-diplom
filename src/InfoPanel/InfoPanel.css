@@ -2,14 +2,9 @@
   background: hsl(0 0% 100% / 0.1);
   color: white;
   position: fixed;
-  /* inset: 0 0 0 70%; */
   width: 380px;
   right: 16px;
   top: 16px;
-  /* bottom: 16px; */
-  /* height: 90%; */
-  /* height: 100%; */
-  /* margin: 10px 0 10px 0; */
   backdrop-filter: blur(6px);
   padding: 10px;
   border-radius: 10px;
@@ -41,7 +36,6 @@
 }
 .infoPanel__mainInfo p {
   margin-top: 0;
-  /* line-height: 100%; */
 }
 
 .close {
@@ -83,25 +77,5 @@
     left: 0;
     margin-left: auto; 
     margin-right: auto; 
-    /* top: auto;
-    bottom: 0; */
   } 
 }
-/* @media ((max-width: 800px)) {
-  .infoPanel {
-    height: 380px;
-    width: 100%;
-    /* right: 16px; */
-    /* left: 16px; */
-    /* bottom: 16px; */
-    /* height: 90%; */
-    /* height: 100%; */
-    /* margin: 10px 0 10px 0; */
-    /* backdrop-filter: blur(10px); */
-    /* padding: 10px; */
-    /* border-radius: 10px; */
-    /* z-index: 100; */
-    /* transform: translateX(calc(100% + 16px)); */
-    /* transition: transform 350ms ease-in; */
-  /* } */
-/* } */ 
